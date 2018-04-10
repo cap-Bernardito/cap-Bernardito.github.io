@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink photo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script src="js/picturefill.min.js"></script>
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <!-- begin header -->
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="/" class="logo"></a>
+            <button class="burger" data-target-id="burger-1">
+              <span>Показать пример кода</span>
+            </button>
+          </div>
+          <div class="header__nav" id="burger-1-nav">
+            <div class="nav">
+              <a href="/" class="nav__item nav__item--is-active">Главная</a>
+              <a href="photo.html" class="nav__item">Фотографии</a>
+              <a href="form.html" class="nav__item">Конкурс</a>
+              <a href="#" class="nav__item">HTML Academy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- begin hero hero__short -->
+    <div class="hero hero__short">
+      <div class="container relative-wrap">
+        <div class="hero__title hero__title-middle "> Фотографии пользователей </div>
+      </div>
+    </div>
+    <!-- end hero hero__short -->
+    <!-- begin go-text -->
+    <div class="go-text">
+      <div class="container">
+        <p> Взгляните на фотографии, которые выкладывают пользователи!
+          <br> Видите, как не хватает ваших? </p>
+      </div>
+    </div>
+    <!-- end go-text -->
+    <!-- begin promo -->
+    <div class="section-promo">
+      <div class="entry__photo-full">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+          <img class="post-list__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя"> </picture>
+        <button class="entry__button">Панорама дня</button>
+      </div>
+      <!-- begin container -->
+      <div class="container">
+        <div class="entries">
+          <div class="entry entry-full">
+            <div class="entry__content entry-full">
+              <p class="entry__name">Анна
+                <span class="entry__time">(12 минут назад)</span>
+              </p>
+              <p class="entry__like">Нравится: 215
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end promo -->
+    <!-- begin entries -->
+    <div class="section-entries">
+      <div class="container">
+        <div class="entries">
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Левон
+                <span class="entry__time">(5 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 356
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Вчера он на луну летал, сегодня в руки к нам попал </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Антон
+                <span class="entry__time">(12 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 666
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Соседи будут рады! </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Борис
+                <span class="entry__time">(20 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 215
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Здесь могла быть ваша цитата о высоком и вечном! </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Сергей
+                <span class="entry__time">(25 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 4
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Самая кубанская в мире! </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Максим
+                <span class="entry__time">(40 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 150
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Где снег-то? </p>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="entry__photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post-list__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt=""> </picture>
+            </div>
+            <div class="entry__content entry__content-column">
+              <p class="entry__name">Надежда
+                <span class="entry__time">(45 часов назад)</span>
+              </p>
+              <p class="entry__like entry-last">Нравится: 2560
+                <button class="heart"></button>
+              </p>
+              <p class="entry__text"> Всем GM и взаимные лайки! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end entries -->
+    <!-- begin go-text -->
+    <div class="go-text">
+      <div class="container">
+        <p> Затмите их всех!
+          <br> Выкладывайте все, что накопилось в телефоне! </p>
+      </div>
+    </div>
+    <!-- end go-text -->
+    <!-- begin section-configurator -->
+    <div class="section-configurator">
+      <div class="container">
+        <!-- begin configurator beige -->
+        <div class="configurator beige">
+          <div class="configurator__image">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img class="post-list__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt=""> </picture>
+          </div>
+          <div class="configurator__redactor instrument">
+            <div class="instrument__item">
+              <div class="instrument__icon">
+                <svg class="icon icon-logo-icon-editor-crop">
+                  <use xlink:href="img/sprite.svg#icon-logo-icon-editor-crop"></use>
+                </svg>
+              </div>
+              <div class="instrument__range">
+                <input id="irange1" type="range"> </div>
+            </div>
+            <div class="instrument__item">
+              <div class="instrument__icon">
+                <svg class="icon icon-logo-icon-editor-fill">
+                  <use xlink:href="img/sprite.svg#icon-logo-icon-editor-fill"></use>
+                </svg>
+              </div>
+              <div class="instrument__range">
+                <input id="irange2" type="range"> </div>
+            </div>
+            <div class="instrument__item">
+              <div class="instrument__icon">
+                <svg class="icon icon-logo-icon-editor-contrast">
+                  <use xlink:href="img/sprite.svg#icon-logo-icon-editor-contrast"></use>
+                </svg>
+              </div>
+              <div class="instrument__range">
+                <input id="irange3" type="range"> </div>
+            </div>
+            <div class="instrument__buttons">
+              <button class="button button-instrument">Запостить</button>
+              <button class="button button-instrument" disabled>Отмена</button>
+            </div>
+          </div>
+        </div>
+        <!-- end configurator beige -->
+      </div>
+    </div>
+    <!-- end section-configurator -->
+    <!-- begin footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__logo">
+            <a href="/" class="logo logo-pink"></a>
+          </div>
+          <div class="footer__sociate sociate">
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-twitter">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-facebook">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-youtube">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-youtube"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__creaters"> Разработано
+            <svg class="icon icon-logo-htmlacademy">
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- <a class="to-top" id="to-top" href="#">↑</a> -->
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <!-- END scripts -->
+  </body>
+</html>

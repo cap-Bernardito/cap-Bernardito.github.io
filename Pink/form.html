@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script src="js/picturefill.min.js"></script>
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <!-- begin header -->
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="/" class="logo"></a>
+            <button class="burger" data-target-id="burger-1">
+              <span>Показать пример кода</span>
+            </button>
+          </div>
+          <div class="header__nav" id="burger-1-nav">
+            <div class="nav">
+              <a href="/" class="nav__item nav__item--is-active">Главная</a>
+              <a href="photo.html" class="nav__item">Фотографии</a>
+              <a href="form.html" class="nav__item">Конкурс</a>
+              <a href="#" class="nav__item">HTML Academy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- begin hero hero__short -->
+    <div class="hero hero__short">
+      <div class="container relative-wrap">
+        <div class="hero__title hero__title-middle hero__title--compact"> Конкурс на самое безбашенное путешествие с Пинк </div>
+      </div>
+    </div>
+    <!-- end hero hero__short -->
+    <!-- begin go-text -->
+    <div class="go-text">
+      <div class="container">
+        <p> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже: </p>
+      </div>
+    </div>
+    <!-- end go-text -->
+    <!-- begin section-form -->
+    <div class="section-form">
+      <div class="container">
+        <form action="https://echo.htmlacademy.ru" method="POST" class="form">
+          <!-- begin fieldset form__username -->
+          <fieldset class="fieldset form__fieldset--username">
+            <legend class="vh">ФИО</legend>
+            <div class="fieldset__items fieldset__items--username">
+              <label class="label fieldset__item--username">
+                <div class="label__descr"> Фамилия: </div>
+                <input class="input input--username" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required> </label>
+              <label class="label fieldset__item--username">
+                <div class="label__descr"> Имя: </div>
+                <input class="input input--username" type="text" name="name" id="name" placeholder="Введите ваше имя *" required> </label>
+              <label class="label fieldset__item--username">
+                <div class="label__descr"> Отчество: </div>
+                <input class="input input--username" type="text" name="lastname" id="lastname" placeholder="Ну и отчество тоже"> </label>
+            </div>
+          </fieldset>
+          <!-- end fieldset form__username -->
+          <!-- begin fieldset form__os -->
+          <fieldset class="fieldset form__fieldset--os">
+            <legend class="legend"> С каким приложением путешествовали? </legend>
+            <div class="fieldset__items">
+              <div class="fieldset__item">
+                <input class="input input--radio" type="radio" name="os" id="iOS" checked>
+                <label class="label label--radio" for="iOS"> Pink для iOS </label>
+              </div>
+              <div class="fieldset__item">
+                <input class="input input--radio" type="radio" name="os" id="Android">
+                <label class="label label--radio" for="Android"> Pink на Android </label>
+              </div>
+              <div class="fieldset__item">
+                <input class="input input--radio" type="radio" name="os" id="WinPhone">
+                <label class="label label--radio" for="WinPhone"> Windows Phone </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- end fieldset form__os -->
+          <!-- begin fieldset form__contacts -->
+          <fieldset class="fieldset form__fieldset--contacts">
+            <legend class="legend"> Контактная информация </legend>
+            <div class="fieldset__items fieldset__items--contacts">
+              <div class="fieldset__item fieldset__item--half">
+                <span class="input--phone">
+                  <input class="input input--full" type="tel" pattern="[\d\s\(\)\+\-]*" name="phone" id="phone" placeholder="Номер пожалуйста"> </span>
+                <label class="label" for="phone"> Номер телефона </label>
+              </div>
+              <div class="fieldset__item fieldset__item--half">
+                <span class="input--mail">
+                  <input class="input input--full" type="email" name="email" id="email" placeholder="Введите почту *" required> </span>
+                <label class="label" for="email"> Адрес почты </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- end fieldset form__contacts -->
+          <!-- begin fieldset form__achievement -->
+          <fieldset class="fieldset form__fieldset--achievement">
+            <legend class="legend"> ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ </legend>
+            <div class="fieldset__items fieldset__items--achievement">
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="shark" id="shark" checked>
+                <label class="label label--checkbox" for="shark"> Сделал селфи с акулой </label>
+              </div>
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="chack" id="chack">
+                <label class="label label--checkbox" for="chack"> Видел Чака Норриса </label>
+              </div>
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="town" id="town" checked>
+                <label class="label label--checkbox" for="town"> Удержал башню </label>
+              </div>
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="beach" id="beach" checked>
+                <label class="label label--checkbox" for="beach"> Обгорел на пляже </label>
+              </div>
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="prise" id="prise">
+                <label class="label label--checkbox" for="prise"> Накупил сувениров </label>
+              </div>
+              <div class="fieldset__item--achievement">
+                <input class="input input--checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="label label--checkbox" for="hotel"> Разгромил отель </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- end fieldset form__achievement -->
+          <!-- begin fieldset form__emotions -->
+          <fieldset class="fieldset form__fieldset--emotions">
+            <legend class="legend"> Опишите свои эмоции </legend>
+            <div class="fieldset__items">
+              <textarea class="textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+          <!-- end fieldset form__emotions -->
+          <div class="form__submit">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <div class="form__note">
+              <span>*</span> — ОБЯЗАТЕЛЬНЫЕ ДЛЯ ЗАПОЛНЕНИЯ ПОЛЯ</div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end section-form -->
+    <!-- begin footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__logo">
+            <a href="/" class="logo logo-pink"></a>
+          </div>
+          <div class="footer__sociate sociate">
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-twitter">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-facebook">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="sociate__icon">
+              <svg class="icon icon-logo-icon-youtube">
+                <use xlink:href="img/sprite.svg#icon-logo-icon-youtube"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__creaters"> Разработано
+            <svg class="icon icon-logo-htmlacademy">
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- <a class="to-top" id="to-top" href="#">↑</a> -->
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <!-- END scripts -->
+  </body>
+</html>
