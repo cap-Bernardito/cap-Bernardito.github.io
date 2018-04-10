@@ -2,6 +2,30 @@
 
 ## Примеры работ:
 
+### Apra
+
+* [Сайт](http://www.apra-it.com/)
+* [Лендинг](http://www.apra-it.com/elit)
+
+---
+### Автокондиционеры
+
+* [Сайт](https://автокондиционеры.com)
+
+---
+### Avteil
+
+***Страницы***
+* [Главная](https://cap-bernardito.github.io/Avteil/index.html)
+* [Запчасти](https://cap-bernardito.github.io/Avteil/linkmedia.html)
+* [Каталог](https://cap-bernardito.github.io/Avteil/catalog.html)
+* [Каталог 2](https://cap-bernardito.github.io/Avteil/grid_menu.html)
+* [Продукт](https://cap-bernardito.github.io/Avteil/product-page.html)
+* [Поиск](https://cap-bernardito.github.io/Avteil/search_results.html)
+* [Поиск 2](https://cap-bernardito.github.io/Avteil/search_detal.html)
+* [Контакты](https://cap-bernardito.github.io/Avteil/contacts.html)
+
+---
 ### Jetro
 
 ***Страницы***
