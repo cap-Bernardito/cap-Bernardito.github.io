@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sellectica</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <script src="js/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <!-- begin header -->
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="/" class="logo">Sellectica</a>
+          </div>
+          <div class="header__search">
+            <form action="/" method="get" class="search">
+              <label for="search"></label>
+              <input class="input--search" id="search" name="search" value="" placeholder="Search here" type="text">
+              <input type="submit" value="" class="input--submit"> </form>
+          </div>
+          <div class="header__meta meta">
+            <a href="#" class="meta__item meta__item--email"></a>
+            <a href="#" class="meta__item meta__item--map"></a>
+            <a href="#" class="meta__item meta__item--cart"></a>
+          </div>
+          <div class="header__face face">
+            <div class="face__img">
+              <img src="img/face.jpg" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- begin nav -->
+    <div class="nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--is-active">
+            <a href="#" style="background-image: url(img/icon-dash.png);">Dashboard</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" style="background-image: url(img/icon-stac.png);">Stactics</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" style="background-image: url(img/icon-sales.png);">Sales</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" style="background-image: url(img/icon-cust.png);">Customers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" style="background-image: url(img/icon-sett.png);">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end nav -->
+    <!-- begin section -->
+    <div class="section section--first">
+      <div class="container">
+        <!-- begin section__wrap -->
+        <div class="section__wrap">
+          <!-- begin section__item-v1 chart -->
+          <div class="section__item-v1 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Todays sale</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main">
+              <div class="diagram-circle">
+                <div class="diagram-circle__svg">
+                  <svg viewbox="0 0 36 36">
+                    <circle class="circle__back" r="16" cx="18" cy="18" />
+                    <circle class="circle__front" r="16" cx="18" cy="18" style="stroke-dasharray: 50 100" /> </svg>
+                </div>
+                <div class="diagram-circle__text"> 175k </div>
+              </div>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v1 chart -->
+          <!-- begin section__item-v1 chart -->
+          <div class="section__item-v1 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Todays sale</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main">
+              <div class="diagram-circle">
+                <div class="diagram-circle__svg">
+                  <svg viewbox="0 0 36 36">
+                    <circle class="circle__back" r="16" cx="18" cy="18" />
+                    <circle class="circle__front" r="16" cx="18" cy="18" style="stroke-dasharray: 50 100" /> </svg>
+                </div>
+                <div class="diagram-circle__text"> 175k </div>
+              </div>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v1 chart -->
+          <!-- begin section__item-v2 chart -->
+          <div class="section__item-v2 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Sale chart</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main">
+              <canvas id="saleChart" width="100%" height="50%"></canvas>
+              <script>
+                window.addEventListener('DOMContentLoaded', domCreated);
+
+                function domCreated()
+                {
+                  charts.saleChart.data.datasets[0].data = [10, 25, 11, 1, 17, 18, 12, 19, 15, 13, 17, 18];
+                  charts.saleChart.update();
+                }
+
+              </script>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v2 chart -->
+        </div>
+        <!-- end section__wrap -->
+      </div>
+    </div>
+    <!-- end section -->
+    <!-- begin section -->
+    <div class="section section--two">
+      <div class="container">
+        <!-- begin section__wrap -->
+        <div class="section__wrap">
+          <!-- begin section__item-v2 chart -->
+          <div class="section__item-v2 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Sales flow chart</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main">
+              <br>
+              <canvas id="salesFlowChart" width="100%" height="30%"></canvas>
+              <br> </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v2 chart -->
+        </div>
+        <!-- end section__wrap -->
+      </div>
+    </div>
+    <!-- end section -->
+    <!-- begin section -->
+    <div class="section">
+      <div class="container">
+        <!-- begin section__wrap -->
+        <div class="section__wrap">
+          <!-- begin section__item-v3 chart -->
+          <div class="section__item-v3 chart section--table">
+            <div class="chart__head">
+              <h2 class="chart__title">Product List</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main">
+              <table class="rating-table">
+                <thead>
+                  <tr>
+                    <td class="rating-table__name">Product name</td>
+                    <td class="rating-table__id">Product ID</td>
+                    <td class="rating-table__rating">Rating</td>
+                    <td class="rating-table__sale">Sale</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#110</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>110</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#120</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>120</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#130</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>130</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#140</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>140</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#150</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#160</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>160</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#170</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>170</td>
+                  </tr>
+                  <tr>
+                    <td>Product name</td>
+                    <td>#180</td>
+                    <td>
+                      <div class="rating">
+                        <div class="rating__active" style="width: 135px;"></div>
+                      </div>
+                    </td>
+                    <td>180</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v3 chart -->
+          <!-- begin section__item-v2 -->
+          <div class="section__item-v2">
+            <!-- begin section__item-v4 chart -->
+            <div class="section__item-v4 chart">
+              <div class="chart__head">
+                <h2 class="chart__title">Todays Sale</h2>
+                <div class="cart__buttons buttons">
+                  <button class="button button--menu"></button>
+                  <button class="button button--options"></button>
+                </div>
+              </div>
+              <div class="chart__main line-compare">
+                <div class="line-compare__item">
+                  <div class="line-compare__title">Product Name</div>
+                  <div class="line-compare__lines">
+                    <div class="line" style="width: 100%;"></div>
+                    <div class="line line--second" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <div class="line-compare__item">
+                  <div class="line-compare__title">Product Name</div>
+                  <div class="line-compare__lines">
+                    <div class="line" style="width: 60%;"></div>
+                    <div class="line line--second" style="width: 55%;"></div>
+                  </div>
+                </div>
+                <div class="line-compare__item">
+                  <div class="line-compare__title">Product Name</div>
+                  <div class="line-compare__lines">
+                    <div class="line" style="width: 75%;"></div>
+                    <div class="line line--second" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <div class="line-compare__legend legend">
+                  <div class="legend__item">
+                    <div class="legend__color" style="background-color: #f95738;"></div>
+                    <div class="legend__title">Sale</div>
+                  </div>
+                  <div class="legend__item">
+                    <div class="legend__color" style="background-color: #2c3e50;"></div>
+                    <div class="legend__title">Comission</div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart__more">
+                <a href="#" class="more">See full list</a>
+              </div>
+            </div>
+            <!-- end section__item-v4 chart -->
+            <!-- begin section__item-v4 chart -->
+            <div class="section__item-v4 chart">
+              <div class="chart__head">
+                <h2 class="chart__title">Todays Sale</h2>
+                <div class="cart__buttons buttons">
+                  <button class="button button--menu"></button>
+                  <button class="button button--options"></button>
+                </div>
+              </div>
+              <div class="chart__main sale">
+                <div class="sale__count">175k
+                  <span></span>
+                </div>
+                <a href="#" class="sale__more">Product List</a>
+              </div>
+              <div class="chart__more">
+                <a href="#" class="more">See full list</a>
+              </div>
+            </div>
+            <!-- end section__item-v4 chart -->
+          </div>
+          <!-- end section__item-v2 chart -->
+        </div>
+        <!-- end section__wrap -->
+      </div>
+    </div>
+    <!-- end section -->
+    <!-- begin section -->
+    <div class="section">
+      <div class="container">
+        <!-- begin section__wrap -->
+        <div class="section__wrap">
+          <!-- begin section__item-v5 chart -->
+          <div class="section__item-v5 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Todays sale</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main chart__main--col">
+              <div class="chart__main--legend">
+                <div class="legend">
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #f95738;"></div>
+                    <div class="legend__title">Last Month Sale :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #3498db;"></div>
+                    <div class="legend__title">Last Week Sale :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #2c3e50;"></div>
+                    <div class="legend__title">Todays Sale :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="total"> Total Sale : 50k </div>
+              </div>
+              <div class="chart__main--diagram">
+                <div class="diagram-circle">
+                  <div class="diagram-circle__svg diagram-circle__svg--many">
+                    <svg viewbox="0 0 36 36">
+                      <circle class="circle__thin" r="16" cx="18" cy="18" style="stroke-dasharray: 90 100; stroke: #f95738;" /> </svg>
+                    <svg viewbox="0 0 36 36">
+                      <circle class="circle__thin" r="16" cx="18" cy="18" style="stroke-dasharray: 80 100; stroke: #3498db;" /> </svg>
+                    <svg viewbox="0 0 36 36">
+                      <circle class="circle__thin" r="16" cx="18" cy="18" style="stroke-dasharray: 65 100; stroke: #2c3e50;" /> </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v5 chart -->
+          <!-- begin section__item-v2 chart -->
+          <div class="section__item-v2 chart">
+            <div class="chart__head">
+              <h2 class="chart__title">Sale chart</h2>
+              <div class="cart__buttons buttons">
+                <button class="button button--menu"></button>
+                <button class="button button--options"></button>
+              </div>
+            </div>
+            <div class="chart__main chart__main--col">
+              <div class="chart__main--legend">
+                <div class="legend">
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #f95738;"></div>
+                    <div class="legend__title">Sale :
+                      <strong>75k</strong>
+                    </div>
+                  </div>
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #c72000;"></div>
+                    <div class="legend__title">Comission :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #8e1800;"></div>
+                    <div class="legend__title">Comission :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                  <div class="legend__item legend__item--vert">
+                    <div class="legend__color" style="background-color: #570e00;"></div>
+                    <div class="legend__title">Comission :
+                      <strong>120k</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="total"> Total Sale : 50k </div>
+              </div>
+              <div class="chart__main--diagram">
+                <div class="diagram-circle">
+                  <div class="diagram-circle__svg diagram-circle__svg--sector">
+                    <svg viewbox="0 0 36 36">
+                      <circle class="circle__round" r="15.95" cx="18" cy="18" style="stroke-dasharray: 50 100; stroke: #f95738;" />
+                      <circle class="circle__round" r="15.95" cx="18" cy="18" style="stroke-dashoffset: -50; stroke-dasharray: 10 100; stroke: #BE1C16;" />
+                      <circle class="circle__round" r="15.95" cx="18" cy="18" style="stroke-dashoffset: -60; stroke-dasharray: 20 100; stroke: #871910;" />
+                      <circle class="circle__round" r="15.95" cx="18" cy="18" style="stroke-dashoffset: -80; stroke-dasharray: 20 100; stroke: #54130A;" /> </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart__more">
+              <a href="#" class="more">See full list</a>
+            </div>
+          </div>
+          <!-- end section__item-v2 chart -->
+        </div>
+        <!-- end section__wrap -->
+      </div>
+    </div>
+    <!-- end section -->
+    <!-- <a class="to-top" id="to-top" href="#">↑</a> -->
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <!-- END scripts -->
+  </body>
+</html>

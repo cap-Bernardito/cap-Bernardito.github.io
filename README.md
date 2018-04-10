@@ -1,5 +1,7 @@
 # Верстальщик
 
+Контакты:  cap-Bernardito@yandex.ru - Алексей Лавинский
+
 ## Примеры работ:
 
 ### Apra
@@ -56,6 +58,14 @@
 * [Главная](https://cap-bernardito.github.io/Shopia/index.html)
 
 [Репозиторий на github](https://github.com/cap-Bernardito/shopia)
+
+---
+### Sellectica
+
+***Страницы***
+* [Главная](https://cap-bernardito.github.io/Sellectica/index.html)
+
+[Репозиторий на github](https://github.com/cap-Bernardito/sellestica)
 
 ---
 
