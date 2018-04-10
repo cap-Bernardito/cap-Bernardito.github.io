@@ -50,6 +50,14 @@
 [Репозиторий на github](https://github.com/cap-Bernardito/pink)
 
 ---
+### Shopia
+
+***Страницы***
+* [Главная](https://cap-bernardito.github.io/Shopia/index.html)
+
+[Репозиторий на github](https://github.com/cap-Bernardito/shopia)
+
+---
 
 
 
